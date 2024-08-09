@@ -229,7 +229,7 @@ $query10 = "SELECT * FROM usuario WHERE nombre like :nombre";
 //preparamos la consulta
 $stmt = $pdo -> prepare($query10);
 
-//Bind params o viculacion de parametros (ES MAS RECOMENDADA)
+//Bind params o viculacion de parametros (ES MAS RECOMENDADA!
 $stmt-> bindParam(':nombre', $texto_buscar, PDO::PARAM_STR);
 
 $stmt -> execute();
